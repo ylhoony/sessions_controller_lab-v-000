@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
     if !session[:name].present?
       session[:name] = nil
     else
-      session[:name].delete
+      session[:name].clear
     end
     redirect_to "/login"
   end
