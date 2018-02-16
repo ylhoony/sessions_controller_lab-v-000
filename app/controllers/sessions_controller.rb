@@ -14,11 +14,12 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    if !session[:name].present?
-      session[:name] = nil
-    else
-      session[:name] = nil
-    end
+    # if !session[:name].present?
+    #   
+    # else
+    #   session[:name] = nil
+    # end
+    session[:name] = nil
     redirect_to "/login"
   end
 
