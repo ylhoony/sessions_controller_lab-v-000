@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    binding.pry
+    # binding.pry
   end
 
   def destroy
