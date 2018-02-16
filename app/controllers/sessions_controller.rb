@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
     # binding.pry
     if params[:name].present?
       session[:name] = params[:name]
+      render "application/hello"
     else
       redirect_to "/login"
     end
