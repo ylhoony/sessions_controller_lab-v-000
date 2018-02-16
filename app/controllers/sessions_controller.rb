@@ -17,6 +17,7 @@ class SessionsController < ApplicationController
     binding.pry
     if !session[:name].present?
       session[:name] = nil
+      redirect_to "/login"
     else
     # session[:name].delete
     end
