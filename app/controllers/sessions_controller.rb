@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
 
   def destroy
     # binding.pry
-    session[:name].clear
+    session[:name].delete
   end
 
 end
